@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SimonGame</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="welcome_msg">Welcome to Simon</string>
+    <string name="options">Options</string>
+    <string name="slow">Slow</string>
+    <string name="medium">Medium</string>
+    <string name="fast">Fast</string>
+    <string name="speed">Speed</string>
+    <string name="startlvl">Starting Level</string>
+    <string-array name="InitialLevels">
+        <item >One</item>
+        <item >Two</item>
+        <item >Three</item>
+        <item >Four</item>
+        <item >Five</item>
+        <item >Six</item>
+        <item >Seven</item>
+        <item >Eight</item>
+        <item >Nine</item>
+        <item >Ten</item>
+    </string-array>
+    <string name="helptitle">Simon is a simple memory game!</string>
+
+</resources>

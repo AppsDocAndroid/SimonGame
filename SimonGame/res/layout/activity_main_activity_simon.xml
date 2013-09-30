@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/R"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262625"
+    android:paddingBottom="5dp"
+    tools:context=".MainActivitySimon" >
+ 
+    <Button
+        android:id="@+id/Green"
+        android:layout_width="140.0dip"
+        android:layout_height="160.0dip"
+        android:layout_alignRight="@+id/Red"
+        android:layout_alignTop="@+id/Yellow"
+        android:background="@drawable/customgreen"/>
+
+    <Button
+        android:id="@+id/Yellow"
+        android:layout_width="140.0dip"
+        android:layout_height="160.0dip"
+        android:layout_alignLeft="@+id/Blue"
+        android:layout_below="@+id/Blue"
+        android:background="@drawable/customyellow"
+        android:layout_marginTop = "3dp" />
+
+
+    <TextView
+        android:id="@+id/Scorebox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Yellow"
+        android:layout_below="@+id/Yellow"
+        android:layout_marginTop="8dp"
+        android:text="Current Score: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#cccccc"
+        android:textColorLink="#262625" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Scorebox"
+        android:layout_alignLeft="@+id/Green"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#cccccc" />
+
+    <Button
+        android:id="@+id/Red"
+        android:layout_width="140.0dip"
+        android:layout_height="160.0dip"
+        android:layout_above="@+id/Simon"
+        android:layout_toLeftOf="@+id/Simon"
+        android:layout_marginRight = "-50dip"
+        android:layout_marginBottom = "-30dip"
+        android:background="@drawable/custombuttons" />
+
+            <Button
+                android:id="@+id/Blue"
+                android:layout_width="140.0dip"
+                android:layout_height="160.0dip"
+                android:layout_alignBaseline="@+id/Red"
+                android:layout_alignBottom="@+id/Red"
+                android:layout_toRightOf="@+id/Simon"
+                android:layout_marginLeft = "-50dip"
+                android:background="@drawable/customblue" />
+
+            <Button
+                android:id="@+id/Simon"
+                android:layout_width="100.0dip"
+                android:layout_height="70.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/customsimon"
+                android:onClick="Simonsays" />
+
+</RelativeLayout>

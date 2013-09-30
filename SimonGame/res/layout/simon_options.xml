@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262625"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/optionsmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30.0dp"
+        android:text="@string/options"
+        android:textColor="#cccccc"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dp"
+        android:layout_marginTop="5.0dp"
+        android:text="@string/speed"
+        android:textColor="#cccccc"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/slow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/slow"
+            android:textColor="#cccccc" />
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/medium"
+            android:textColor="#cccccc" />
+
+        <RadioButton
+            android:id="@+id/fast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/fast"
+            android:textColor="#cccccc" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lvlstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dp"
+        android:layout_marginTop="15.0dp"
+        android:text="@string/startlvl"
+        android:textColor="#cccccc"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/lvlspinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dp"
+        android:prompt="@string/startlvl" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="90dip"
+        android:layout_height="41dip"
+        android:layout_marginLeft="50.0dp"
+        android:layout_marginTop="40.0dp"
+        android:background="@drawable/ok" />
+    
+</LinearLayout>
